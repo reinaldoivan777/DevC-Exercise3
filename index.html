@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Exercise 3</title>
+    <title>Exercise 3 - Planet List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
     <center>
-        <h1>Daftar Planet</h1>
+        <h1 class='mb-3'>STAR WARS PLANETS</h1>
+        <div class="container">
+            <div class="row mb-3">
+                <div class="offset-sm-9 col-sm-3">
+                    <input type="text" placeholder="Search Planet" class="form-control" name="" id="searchPlanet">
+                </div>
+            </div>
+            <table class="table table-bordered">
+                <thead class="thead-dark">
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Rotation Period</th>
+                    <th>Orbital Period</th>
+                    <th>Diameter</th>
+                    <th>Climate</th>
+                    <th>Gravity</th>
+                    <th>Terrain</th>
+                    <th>Population</th>
+                </thead>
+                <tbody id="planet">
+    
+                </tbody>
+            </table>
+        </div>
     </center>
+    <script src="./planet.js"></script>
 </body>
 </html>
